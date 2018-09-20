@@ -1,0 +1,76 @@
+.footer {
+	padding: 31px 10px;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	@include media-breakpoint-down(xs) {
+		flex-direction: column;
+		align-items: center;
+	}
+	&-title {
+		font-size: 20px;
+		font-weight: 700;
+		color: #282b31;
+		line-height: 25px;
+	}
+	&-created {
+		color: #999ea8;
+		font-size: 11px;
+		font-weight: 400;
+		text-align: center;
+		margin-top: 5px;
+		@include media-breakpoint-down(xs) {
+			margin-top: 15px;
+		}
+		i {
+			background: url('../img/007-heart.png') no-repeat;
+			width: 20px;
+			height: 25px;
+			display: block;
+		    margin: 0 0 0 8px;
+		}
+		span {
+			font-weight: 600;
+			color: #282b31;
+			margin-left: 5px;
+		}
+		& > div {
+			&:first-child {
+				display: flex;
+			}
+		}
+	}
+	.btn-group {
+		border: 1px solid #e7e8ea;
+		border-radius: 6px;
+		margin-top: -8px;
+		@include media-breakpoint-down(xs) {
+			margin-top: 15px;
+		}
+		.twitter {
+			background: url('../img/008-twitter.svg') no-repeat center;
+			&:hover {
+				background: url('../img/011-twitter.svg') no-repeat center;
+			}
+		}
+		.facebook {
+			background: url('../img/009-fb.svg') no-repeat center;
+			border-left: 1px solid #e7e8ea;
+			border-right: 1px solid #e7e8ea;
+			&:hover {
+				background: url('../img/012-fb.svg') no-repeat center;
+			}
+		}
+		.instagram {
+			background: url('../img/010-instagram.svg') no-repeat center;
+			&:hover {
+				background: url('../img/013-instagram.svg') no-repeat center;
+			}
+		}
+		button {
+			height: 40px;
+			width: 40px;
+		}
+	}
+
+}

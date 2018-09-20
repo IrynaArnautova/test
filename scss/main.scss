@@ -1,12 +1,4 @@
-.partner {
-	padding: 5em 0;
-	margin: auto;
-	display: flex;
-	justify-content: space-around;
-	li {
-		list-style-type: none;
-	}	
-}
+/*Section description-block*/
 
 .description-block {
 	display: flex;
@@ -34,7 +26,7 @@
 	.text-block {
 		h3 {
 			color: #282b31;
-			font-size: 1em;
+			font-size: 16px;
 			font-weight: 300;
 			line-height: 2.188;
 			span {
@@ -43,7 +35,7 @@
 		}
 		p {
 			color:  #676c75;
-			font-size: 0.87em;
+			font-size: 14px;
 			font-weight: 400;
 			line-height: 1.78;
 		}
@@ -85,6 +77,8 @@
 		}
 	}
 }
+
+/*Section to-started*/
 
 .to-started {
 	padding: 90px 0 90px 15px;
@@ -132,6 +126,8 @@
 	    }
 	}
 }
+
+/*Section row-content*/
 
 .row-content {
 	padding: 120px 15px;
@@ -211,7 +207,7 @@
 	}
 }
 
-
+/*Section choose-plan*/
 
 .choose-plan {
 	display: flex;
@@ -239,7 +235,7 @@
 			max-width: unset;
 		}
 		h4 {
-			font-size: 2.18em;
+			font-size: 35px;
 			line-height: 3.12;
 			color: #282b31;
 			font-weight: 300;
@@ -249,13 +245,13 @@
 		}
 		p {
 			color:  #676c75;
-			font-size: 1em;
+			font-size: 16px;
 			font-weight: 400;
 			line-height: 1.87;
 		}
 		.custom-select {
 			width: unset;
-			min-width: 6em;
+			min-width: 90px;
 			border-radius: 4px;
 			box-shadow: 0 2px 6px rgba(40, 43, 49, 0.08);
 			border: 0;
@@ -268,10 +264,10 @@
 	&-select {
 		span {
 			color: #676c75;
-			font-size: 1em;
+			font-size: 16px;
 			font-weight: 400;
 			line-height: 1.87;
-			margin-right: 0.8em;
+			margin-right: 12px;
 		}
 		@include media-breakpoint-down(xs) {
 			margin-bottom: 20px;
@@ -287,7 +283,7 @@
     	}
 		label {
 			color: #676c75;
-			font-size: 1em;
+			font-size: 16px;
 			font-weight: 400;
 			line-height: 1.87;
 			@include media-breakpoint-down(sm) {
@@ -303,13 +299,13 @@
 			box-shadow: 0 2px 6px rgba(40, 43, 49, 0.08);
 			border-radius: 4px;
 			border: 0;
-			padding: 0.5em 1em;
+			padding: 8px 16px;
 			outline: 0;
-			margin-right: 0.9em;
+			margin-right: 15px;
 			&::placeholder {
 				color: #676c75;
 				line-height: 1.34;
-				font-size: 0.9em;
+				font-size: 14px;
 				opacity: 0.5;
 			}
 		}
@@ -338,9 +334,9 @@
 			font-weight: 700;
 			letter-spacing: 2px;
 			text-align: center;
-			font-size: 0.7em;
+			font-size: 14px;
 			text-transform: uppercase;
-			padding: 0.8em;
+			padding: 12px;
 			&.professional {
 				background: rgba(255, 255, 255, 0.07);
 				box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px 1px 0px rgba(255, 255, 255, 0.3);
@@ -358,12 +354,12 @@
 			color: $primary-color;
 			padding-top: 20px;
 			&.professional {
-				font-size: 3.75em;
-			    line-height: 2em;	
+				font-size: 60px;
+			    line-height: 2;	
 			}
 			&.starter {
-				font-size: 2.9em;
-			    line-height: 1.7em;
+				font-size: 40px;
+			    line-height: 1.7;
 			    color: #282b31;
 			}
 		}
@@ -453,6 +449,8 @@
 	}
 }
 
+
+/*Section stay-in-touch*/
 .stay-in-touch {
 	text-align: center;
     padding: 113px 10px;
@@ -528,86 +526,8 @@
 	}
 }
 
-.footer {
-	padding: 31px 10px;
-	display: flex;
-	justify-content: space-between;
-	align-items: flex-start;
-	@include media-breakpoint-down(xs) {
-		flex-direction: column;
-		align-items: center;
-	}
-	&-title {
-		font-size: 20px;
-		font-weight: 700;
-		color: #282b31;
-		line-height: 25px;
-	}
-	&-created {
-		color: #999ea8;
-		font-size: 11px;
-		font-weight: 400;
-		text-align: center;
-		margin-top: 5px;
-		@include media-breakpoint-down(xs) {
-			margin-top: 15px;
-		}
-		i {
-			background: url('../img/007-heart.png') no-repeat;
-			width: 20px;
-			height: 25px;
-			display: block;
-		    margin: 0 0 0 8px;
-		}
-		span {
-			font-weight: 600;
-			color: #282b31;
-			margin-left: 5px;
-		}
-		& > div {
-			&:first-child {
-				display: flex;
-			}
-		}
-	}
-	.btn-group {
-		border: 1px solid #e7e8ea;
-		border-radius: 6px;
-		margin-top: -8px;
-		@include media-breakpoint-down(xs) {
-			margin-top: 15px;
-		}
-		.twitter {
-			background: url('../img/008-twitter.svg') no-repeat center;
-			&:hover {
-				background: url('../img/011-twitter.svg') no-repeat center;
-			}
-		}
-		.facebook {
-			background: url('../img/009-fb.svg') no-repeat center;
-			border-left: 1px solid #e7e8ea;
-			border-right: 1px solid #e7e8ea;
-			&:hover {
-				background: url('../img/012-fb.svg') no-repeat center;
-			}
-		}
-		.instagram {
-			background: url('../img/010-instagram.svg') no-repeat center;
-			&:hover {
-				background: url('../img/013-instagram.svg') no-repeat center;
-			}
-		}
-		button {
-			height: 40px;
-			width: 40px;
-		}
-	}
 
-}
-
-
-
-
+/*Section watch video*/
 .watch-video {
 	background: url('../img/019-img.png') 62%, linear-gradient(340.14deg, #2FB9F8 0%, #7956EC 100%);
 	background-size: 100%;
