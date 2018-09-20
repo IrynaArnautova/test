@@ -155,7 +155,7 @@
 		}
 	}
 	img {
-		width: 100%;
+		max-width: 100%;
 		@include media-breakpoint-down(sm) {
 			width: 78%;
 		}
@@ -421,7 +421,7 @@
 
 	}
 	&-professional {
-		background: url('../img/001-background.png') no-repeat;
+		background: url('../img/profesional_bg.png') no-repeat;
 		border-radius: 12px;
 		padding-top: 3.2em;
 		width: 350px;
@@ -473,6 +473,11 @@
 		font-size: 16px;
 		line-height: 30px;
 		margin-bottom: 30px;
+		@include media-breakpoint-down(xs) {
+			br {
+				display: none;
+			}
+		}
 	}
 	form {
 		padding: 70px;

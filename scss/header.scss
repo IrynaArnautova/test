@@ -1,5 +1,8 @@
 .header-navbar {
 	padding: 1.5em 0.5em;
+	@include media-breakpoint-down(md) {
+		padding: 1.5em 1.5em;
+	}
 	.navbar-nav {
 		justify-content: flex-end;
 		width: 100%;
@@ -42,6 +45,7 @@
 .header-bg {
 	background: url('../img/001-background.png') no-repeat;
 	&.touch-bg {
+		background: url('../img/stay_in_touch_bg.png') no-repeat;
 		background-size: cover;
 	}
 }

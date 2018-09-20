@@ -1,14 +1,14 @@
 .main-screen {
 	display: flex;
 	justify-content: space-between;
-	padding-top: 70px;
+	padding-top: 50px;
 	position: relative;
 	@include media-breakpoint-down(xs) {
 		padding-top: 35px;
 	}
 	&-text {
 		padding-top: 90px;
-		padding-bottom: 100px;
+		padding-bottom: 170px;
 		@include media-breakpoint-down(md) {
 			padding-bottom: 60px;
 		}
@@ -16,14 +16,14 @@
 			padding-top: 0;
 		}
 		img {
-			margin-bottom: 35px;
+			margin-bottom: 28px;
 		}
 		h1 {
 			color: $primary-color;
 			font-weight: 300;
 			font-size: 35px;
 			line-height: 1.42;
-		    margin-bottom: 20px;
+		    margin-bottom: 30px;
 			span {
 				font-weight: 700;
 			}
