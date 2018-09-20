@@ -1,0 +1,47 @@
+.header-navbar {
+	padding: 1.5em 0.5em;
+	.navbar-nav {
+		justify-content: flex-end;
+		width: 100%;
+		.nav-link {
+			color: $primary-color;
+			font-size: 0.938em;
+			font-weight: 400;
+			line-height: 1.59;
+			padding-left: 0;
+			padding-right: 2em;
+		}
+	}
+	.navbar-brand {
+		color: $primary-color;
+		font-weight: 700;
+		font-size: 1.25em;
+		line-height: 1.35;
+	}
+	.nav-item {
+		button {
+			box-shadow: 0px 6px 12px 0px rgba(40, 43, 49, 0.08);
+			border-radius: 6px;
+			background-color: #fff;
+			padding: 0.9em 1.3em;
+			border: 0;
+		}
+		.btn-style-header {
+			color: $secondary-color;
+			font-size: 0.875em;
+			text-transform: uppercase;
+			font-weight: 700;
+			line-height: 1.1;
+		}
+	}
+	.navbar-toggler-icon {
+		background: url('../img/002-menu_icon.png') no-repeat center;
+	}
+}
+
+.header-bg {
+	background: url('../img/001-background.png') no-repeat;
+	&.touch-bg {
+		background-size: cover;
+	}
+}
